@@ -16,7 +16,7 @@ Feature: permissions
       {
         "type": "user",
         "role": "reader",
-        "emailAddress":"test.aodocs3@gmail.com"
+        "emailAddress":"duval.cy@gmail.com"
       }
       """
 
