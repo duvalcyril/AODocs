@@ -37,7 +37,7 @@ Feature: permissions
     * def userId = $.id
 
     Given url 'https://www.googleapis.com/upload/drive/v3/files?uploadType=multipart'
-    And multipart file metaData = { contentType: 'application/json'}
+    And multipart file metaData = { contentType: 'application/json', {name:'test.txt',parents:[folderId]}}
     And multipart file testFile = { read: 'test.txt', contentType: 'text/plain'}
     And header Authorization = authorizationToken
     When method post
