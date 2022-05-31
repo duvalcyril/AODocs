@@ -8,7 +8,7 @@ Feature: permissions
       """
       {
         "mimeType": "application/vnd.google-apps.folder",
-        "name": "fubar"
+        "name": "AODocs_testFolder"
       }
       """
     * def userShareFolder =
@@ -16,15 +16,7 @@ Feature: permissions
       {
         "type": "user",
         "role": "reader",
-        "emailAddress":"duval.cy@gmail.com"
-      }
-      """
-
-    * def userShareForbiddenFile =
-     """
-      {
-        "type": "user",
-        "emailAddress":"toto@yopmail.com"
+        "emailAddress":"test.aodocs3@gmail.com"
       }
       """
 
